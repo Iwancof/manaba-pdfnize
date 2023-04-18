@@ -1,5 +1,5 @@
 # about this repository
-iOSでmanabaを使っているとき、pdfが適切にダウンロードできないため適当にダウンロードして自分用にホスティングするサービス
+iOSでmanabaを使っているとき、pdfが適切にダウンロードできない問題があるため適当にダウンロードして自分用にホスティングするサービスです。
 
 # how to use
 docker build -t pdfnize .
