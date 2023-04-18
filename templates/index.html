@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Downloader</title>
+</head>
+<body>
+    <h1>PDF Downloader</h1>
+    <form method="POST" action="/">
+        <label for="url">PDF URL:</label>
+        <input type="url" name="url" id="url" required>
+        <button type="submit">Download</button>
+    </form>
+    <h1>PDF Files List</h1>
+    <ul>
+      {% for pdf_file in pdf_files %}
+        <li><a href="{{ url_for('static', filename=pdf_file) }}" target="_blank">{{ pdf_file }}</a></li>
+      {% endfor %}
+    </ul>
+</body>
+</html>
+
